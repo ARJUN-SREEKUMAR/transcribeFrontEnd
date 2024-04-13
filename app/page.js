@@ -4,22 +4,18 @@ import Hero from "./Components/Hero";
 import Trial from "./Components/Trial";
 import Contact from "./Components/Contact";
 
-
-
 export default function Home() {
-
-
- 
-  
   return (
-    <main className="flex h-full   flex-col text-white   items-center  p-4  ">
+    <main className="flex h-full   flex-col items-center   p-4  text-white  ">
       <Nav />
-      <div className=" flex flex-col relative md:top-44  top-32 items-center ">
+      <div className=" relative top-32 flex flex-col  justify-center items-center md:top-44 gap-10 ">
         <Hero />
+        <div className="w-[90%]  shadow-2xl rounded-md    text-center md:text-4xl text-2xl relative top-16">
+        Try transcribe by uploading an audiofile less than 2 minitues
+        </div>
         <Trial />
         <Contact />
       </div>
-      
     </main>
   );
 }

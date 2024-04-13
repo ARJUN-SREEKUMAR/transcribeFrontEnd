@@ -2,30 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer utilities {
- .title-gradient {
-  @apply bg-gradient-to-b from-white via-slate-300 to-black bg-clip-text text-transparent;
- }
-
-  body,.dotted{
-    background: #03121f;
-background-image: radial-gradient(rgba(42, 121, 130, 0.613) 1px, transparent 0);
-background-size: 40px 40px;
-background-position: -19px -19px;
+  .title-gradient {
+    @apply bg-gradient-to-b from-white via-slate-300 to-black bg-clip-text text-transparent;
   }
 
+  body,
+  .dotted {
+    background: #03121f;
+    background-image: radial-gradient(
+      rgba(42, 121, 130, 0.613) 1px,
+      transparent 0
+    );
+    background-size: 40px 40px;
+    background-position: -19px -19px;
+  }
 }
-*{
-    scrollbar-color:   #00bbff #fffbf200;
-    scrollbar-width: thin;
-   
+* {
+  scrollbar-color: #00bbff #fffbf200;
+  scrollbar-width: thin;
 }
 ::-webkit-scrollbar {
-    width: 7px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  visibility: hidden; 
+  visibility: hidden;
+}
+::-webkit-media-controls-panel {
+  /* Your styles here */
+ 
+ background: #ffffff;
+  
 }
